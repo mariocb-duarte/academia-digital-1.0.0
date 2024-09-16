@@ -9,19 +9,21 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/alunos")
+@RequestMapping("/xday")
 public class LeadController {
 
     @Autowired
     private LeadServiceImpl service;
 
-    @GetMapping
+    @GetMapping("/leads")
     public List<Lead> getAll() {
         return service.getAll();
     }
 
-    @PostMapping
+    @PostMapping("/newlead")
     public Lead create(@RequestBody LeadForm form) {
         return service.create(form);
     }
+
+    //TODO implementar métodos: get e delete
 }

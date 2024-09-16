@@ -27,6 +27,7 @@ public class LeadServiceImpl implements ILeadService {
 
     @Override
     public Lead get(Long id) {
+        //TODO implementar o metodo get
         return null;
     }
 
@@ -36,5 +37,7 @@ public class LeadServiceImpl implements ILeadService {
     }
 
     @Override
-    public void delete(Long id) {}
+    public void delete(Long id) {
+        //TODO implementar o metodo delete
+    }
 }
